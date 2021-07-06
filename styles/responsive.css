@@ -1,0 +1,51 @@
+@media screen and (max-width: 1150px) {
+  .menu {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .menu {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .new-pizza-btn,
+  .menu-btn {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 677px) {
+  .menu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .menu {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .new-pizza-btn,
+  .menu-btn {
+    font-size: 14px;
+    padding: 4px 15px;
+  }
+  .form-heading {
+    font-size: 1.8em;
+  }
+  .input > input {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 381px) {
+  .sort > button {
+    font-size: 11px;
+    padding: 4px 15px;
+  }
+  .input > input {
+    font-size: 11px;
+  }
+  .form-heading {
+    font-size: 1.5em;
+  }
+}

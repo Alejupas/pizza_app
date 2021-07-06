@@ -1,0 +1,52 @@
+.card-delete {
+  display: none;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid var(--primaryColor);
+  z-index: 7;
+  width: 200px;
+  height: 300px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.confirm {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.modaltbn {
+  font-size: 1.3em;
+  margin: 0;
+  border-radius: var(--border5px);
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.delete-pizza {
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  right: 50%;
+}
+
+.reject-delete-pizza {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  right: 50%;
+}
+
+.delete-pizza:hover {
+  background-color: var(--primaryColor);
+  color: white;
+}
+
+.reject-delete-pizza:hover {
+  background-color: black;
+  color: white;
+}

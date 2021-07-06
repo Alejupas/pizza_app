@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <script type="module" src="./main.js"></script>
+    <title>Pizza</title>
+</head>
+<body>
+
+        <header>
+            <div class="logo"></div>
+            <nav>
+                <button class="menu-btn">MENU</button>
+                <button class="new-pizza-btn">NEW PIZZA</button>
+            </nav>
+        </header>
+        
+
+        <main>
+            <div class="create-pizza">
+                <div class="pizza-form">
+                    <h1 class="form-heading">Create pizza order</h1>
+                    <div class="validationErrors"></div>
+
+                    <div class="input">
+                        <div class="title">Name</div>
+                        <input required type="text" class="name-input" maxlength="30" placeholder="(required)">
+                    </div>
+                    
+
+                    <div class="input">
+                        <div class="title">Price</div>
+                        <input required type="number" class="price-input" step="0.01" min="0" placeholder="(required)">
+                    </div>
+
+                    <div id="select">
+                        <label for="pizzas">Select Heat level:</label>
+                            <select name="heat" id="heat">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                    </div>
+
+                    <div class="input">
+                        <div class="title">Toppings</div>
+                        <input required type="text" class="toppings-input" minlength="2" placeholder="(required)">
+                        <div>
+                            <button class="add-topping">Add</button>
+                            <ul class="toppings"></ul>
+                        </div>
+                    </div>
+
+                    <div class="input select-photo">
+                        <div class="title">Pizza photo</div>
+                        <input class="pizza-photo" list="browsers" placeholder="Select photo">
+                        <datalist id="browsers">
+                            <option value="https://clipart-best.com/img/pizza/pizza-clip-art-26.png">Pizza 1</option>
+                                <option value="https://www.pngkey.com/png/full/856-8564850_jimmysen-super-deluxe-pizza-super-deluxe-pizza.png">Pizza 2</option>
+                            <option value="https://www.pngkit.com/png/full/812-8126374_pizza-png-download-png-image-with-transparent-background.png">Pizza 3</option>
+                            <option value="https://www.pngkey.com/png/full/215-2154284_cheese-pizza.png">Pizza 4</option>
+                            <option value="https://www.vippng.com/png/full/1-13257_pizza-from-top-png.png">Pizza 5</option>
+                            <option value="https://freepngimg.com/thumb/pizza/7-pizza-png-image-thumb.png">Pizza 6</option>
+                        </datalist>
+                    </div>
+
+                            <div class="submit-div">
+                                <button id="submit" type="button">Submit Order</button>
+                            </div>
+
+                    </div>
+            </div>
+
+            <div class="menu-container">
+            
+                <div class="sort">
+                    <button id="sortByName">Sort by <b>Name</b></button>
+                    <button id="sortByPrice">Sort by <b>Price</b></button>
+                    <button id="sortByHeat">Sort by <b>Heat </b></button>
+                </div>
+
+                <div class="menu"></div>
+
+            </div>    
+            
+        </main>
+</body>
+</html>

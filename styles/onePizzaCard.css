@@ -1,0 +1,81 @@
+.one-pizza-card {
+  border-radius: var(--border5px);
+  border: 2px solid var(--thirdColor);
+  padding: 5px;
+  position: relative;
+}
+
+.one-pizza-card:hover {
+  background-color: rgba(246, 231, 204, 0.39);
+}
+
+.one-pizza-card > .card-heat {
+  height: 50px;
+  width: 50px;
+  margin-top: 40px;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+}
+
+.one-pizza-card > .card-photo {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+}
+
+.one-pizza-card > .card-name {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+#card-toppings {
+  font-size: 1em;
+  margin-top: 10px;
+  text-align: left;
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  right: 5%;
+}
+
+#card-toppings > p {
+  word-break: break-all;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card-price {
+  text-align: center;
+  font-size: 1em;
+  position: absolute;
+  top: 68%;
+  right: 45%;
+}
+
+.card-delete-container {
+  position: absolute;
+  top: 85%;
+  right: 50%;
+  left: 50%;
+}
+
+.delete {
+  padding: 10px 0;
+  margin: 0;
+  width: 150px;
+  background-color: rgba(184, 184, 184, 0.212);
+  border-radius: var(--border5px);
+  margin-top: 25px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
+}
+
+.delete:hover {
+  background-color: rgba(184, 184, 184, 0.705);
+}
